@@ -2,12 +2,12 @@
 利用ReactNative库开发一套App的模板架构，为了以后在开发项目时，可以直接复用该架构，提高开发效率。
 
 ##屏幕截图
-  ![](/screenshots/intro.png)
+  ![](/views/Resource/screenshots/intro.jpg)
 
-  ![](/screenshots/login.png)
+  ![](/views/Resource/screenshots/login.jpg)
 
-  ![](/screenshots/home.png)
+  ![](/views/Resource/screenshots/home.jpg)
 
-  ![](/screenshots/Detail.png)
+  ![](/views/Resource/screenshots/detail.jpg)
 
-  ![](/screenshots/borrow.png) 
+  ![](/views/Resource/screenshots/borrow.jpg)
