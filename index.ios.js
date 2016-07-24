@@ -15,7 +15,7 @@ class TLRNProjectTemplate extends Component {
   constructor() {
     super();
     this.state = {
-      showLandingPage: false,
+      showLandingPage: true,
     }
   }
 
