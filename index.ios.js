@@ -1,53 +1,33 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * Created by TridonLee on Mon July 22 2016 11:28:33 GMT+0800 (CST).
  */
+'use strict';
 
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  StyleSheet,
-  Text,
-  View
 } from 'react-native';
 
+import NWDLandingGuide from './views/App/nwdLandingGuide';
+import NWDTabBar from './views/App/nwdTabBar';
+
 class TLRNProjectTemplate extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showLandingPage: false,
+    }
+  }
+
   render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
-    );
+    if (this.state.showLandingPage) {
+      return (
+        <NWDLandingGuide />
+      );
+    } else {
+      return (<NWDTabBar />);
+    }
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 AppRegistry.registerComponent('TLRNProjectTemplate', () => TLRNProjectTemplate);
