@@ -13,6 +13,7 @@ import {
   TouchableOpacity,
   TextInput,
   Image,
+  AlertIOS,
 } from 'react-native';
 
 import Swiper from 'react-native-swiper';
@@ -28,6 +29,19 @@ export default class NWDLandingSwiper extends Component {
       title: "",
       navigationBarHidden: true,
     })
+  }
+
+  _navigateToRegisterview() {
+    AlertIOS.alert(
+      '注册',
+      '该功能还没有实现，等待开发中...',
+      [
+        {
+          text: '确定',
+          // onPress: () => console.log('你单击了确定按钮！'),
+        }
+      ]
+    );
   }
 
   render() {
@@ -72,7 +86,7 @@ export default class NWDLandingSwiper extends Component {
           </Image>
           <View style={styles.buttons}>
             <View style={styles.leftButton}>
-              <Text style={styles.signInButton}>注册</Text>
+              <Text style={styles.signInButton} onPress={this._navigateToRegisterview.bind(this)}>注册</Text>
             </View>
             <View style={styles.rightButton}>
               <Text style={styles.loginButton} onPress={this._navigateToSubview.bind(this)}>登录</Text>
