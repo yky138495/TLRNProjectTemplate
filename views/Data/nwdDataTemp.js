@@ -1,7 +1,12 @@
 'use strict';
 
 var NWDDataTemp = {
-
+// http://static.niwodai.com/Public/Static/201512/images/pro_5.png
+// http://static.niwodai.com/Public/Static/201512/images/pro_7.png
+// http://static.niwodai.com/Public/Static/201512/images/pro_6.png
+// http://static.niwodai.com/Public/Static/201512/images/pro_4.png
+// http://static.niwodai.com/Public/Static/201512/images/pro_10.png
+//
     allProducts :
     [
       {
@@ -83,21 +88,21 @@ var NWDDataTemp = {
           title: '嘉卡贷',
           persons: 2436,
           desc: '最高可借3万，为您偿还信用卡，额度一秒回复',
-          iconpro: require('../Resource/borrow/fyd.png')
+          iconpro: require('../Resource/borrow/jkd.png')
       },
       {
           id: '10007',
           title: '大额借款',
           persons: 236,
           desc: '最高可借50万，无抵押信用借款',
-          iconpro: require('../Resource/borrow/fyd.png')
+          iconpro: require('../Resource/borrow/ded.png')
       },
       {
           id: '10008',
           title: '宅邸贷',
           persons: 1306,
           desc: '最高可借500万，有住房即可申请，短期灵活低利率',
-          iconpro: require('../Resource/borrow/fyd.png')
+          iconpro: require('../Resource/borrow/zdd.png')
       },
     ],
 };
